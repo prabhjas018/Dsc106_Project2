@@ -1,4 +1,4 @@
-# DSC 106 Project 2
+# Project 2: CO2 Environmental Damage by Country
 By Edison Ayran, Prabhjas Singh, and Tanvi Vidyala
 
 ## Sources
