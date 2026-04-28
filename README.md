@@ -1,7 +1,8 @@
-# Project2
+# DSC 106 Project 2
+By Edison Ayran, Prabhjas Singh, and Tanvi Vidyala
 
 ## Sources
-Our source was the World Bank Human Development Indicators dataset (environment.csv)
+Our source was the (World Bank Human Development Indicators dataset)[https://github.com/light-and-salt/World-Bank-Data-by-Indicators/tree/master/environment] (environment.csv)
 
 ## Initial Visualization
 Our initial visualizations supported the proposal that the United States has caused more CO2 damage than any other country (aside from China) for a large proportion of industrialized history.
