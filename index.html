@@ -40,8 +40,8 @@
 
             h1 {
                 margin-block: 1em 0.5rem;
-                font-size: clamp(2.5em, 150% + 2vh + 2vw, 10vmin);
-                font-weight: 800;
+                font-size: clamp(1.8em, 120% + 1.5vh + 1.5vw, 7vmin);
+                font-weight: 600;
             }
 
             h1 small {
@@ -143,24 +143,32 @@
                 <h2>FOR the Proposition</h2>
 
                 <figure>
-                    <img src="for_proposition.png" alt="fig1">
+                    <img src="viz_for_2.png" alt="fig1">
                     <figcaption>
-                        This Visualization argue that the United States has historically caused an extremely large amount of CO2 economic damage.
+                        Annual CO2 damage (USD) over time for major emitters, 1970 to 2019. Source: World Bank Human Development Indicators (environment.csv). The US led all nations for over 35 years. China only overtook it around 2005 due to rapid industrialization.
                     </figcaption>
                 </figure>
 
                 <h3>Design Decisions and Rationale</h3>
 
+                <p><strong>Data Types</strong></p>
                 <ul>
-                <li>
-                    
-                </li>
-                <li>
-                    
-                </li>
-                <li>
-                    
-                </li>
+                    <li><strong>X-Axis:</strong> Q-interval (Years, 1970–2019)</li>
+                    <li><strong>Y-Axis:</strong> Q-ratio (Annual CO2 Damage in Billions of USD)</li>
+                </ul>
+
+                <p><strong>Visual Encoding Choices</strong></p>
+                <ul>
+                    <li><strong>Position of Each Line (Primary):</strong> Shows each country's CO2 damage over time, appropriate for continuous data. Line position makes the US's prolonged dominance visible and highlights the crossover point with China around 2005.</li>
+                    <li><strong>Color (Secondary):</strong> Draws attention to the US's line using a bold, distinct color, directing viewer focus toward the country the argument centers on while leaving other countries visually secondary.</li>
+                    <li><strong>Marks:</strong> Uses different line styles to differentiate secondary countries without introducing additional colors, keeping visual complexity low and focus on the US.</li>
+                    <li><strong>Text and Labels:</strong> Title encodes the narrative framing to prime the viewer's interpretation before they read the data. Axis labels include units and year range for clarity, and the in-plot text annotation directly labels the shaded region to reinforce the key message.</li>
+                </ul>
+
+                <p><strong>Deceptive Techniques Used:</strong></p>
+                <ul>
+                    <li>Draws attention to the United States's CO2 damage levels through the title and the usage of bold color to highlight the US's line. However, despite this, the data actually shows that China has caused more damage overall.</li>
+                    <li>Emphasizes the time period where the United States dominated CO2 damage, which reinforces the argument while downplaying more recent trends.</li>
                 </ul>
             </section>
 
@@ -168,25 +176,32 @@
                 <h2>AGAINST the Proposition</h2>
 
                 <figure>
-                    <img src="against_proposition.png" alt="fig 2">
+                    <img src="viz_against_2.png" alt="fig 2">
                     <figcaption>
-                        This visualization argue that China’s CO2 damage is now much greater than the United States. 
+                        CO2 damage indexed to 1990 = 100, US vs. China, 1990 to 2019. Source: World Bank Human Development Indicators (environment.csv). China's CO2 damage has grown nearly 5x since 1990, while the US figure has remained essentially flat. 
                     </figcaption>
                 </figure>
 
                 <h3>Design Decisions and Rationale</h3>
 
+                <p><strong>Data Types</strong></p>
                 <ul>
-                <li>
-                    
-                </li>
-                <li>
-                    
-                </li>
-                <li>
-                    
-                </li>
-                        
+                    <li><strong>X-Axis:</strong> Q-interval (Years, 1990–2019)</li>
+                    <li><strong>Y-Axis:</strong> Q-ratio (CO2 Damage Index, normalized to 1990 = 100)</li>
+                </ul>
+
+                <p><strong>Visual Encoding Choices</strong></p>
+                <ul>
+                    <li><strong>Position of Each Line (Primary):</strong> Shows each country's indexed CO2 damage over time on a common scale, appropriate for continuous quantitative data. A shared baseline makes the divergence between the two countries immediately apparent to the viewer.</li>
+                    <li><strong>Color (Secondary):</strong> Orange encodes China, blue encodes the United States, using color hue as an identity channel to distinguish the two nominal categories. This pairing makes each country's trajectory easy to track across the full time range.</li>
+                    <li><strong>Marks:</strong> Line mark for both countries, with area fill between the lines encoding the growing gap, making the divergence more visually salient than lines alone.</li>
+                    <li><strong>Text and Labels:</strong> Title encodes the narrative framing to guide the viewer's interpretation before they engage with the data. The y-axis label clarifies the index normalization (1990 = 100) to provide context, and the dotted reference line at 100 anchors the baseline year so viewers can measure change from a fixed point.</li>
+                </ul>
+
+                <p><strong>Deceptive Techniques Used:</strong></p>
+                <ul>
+                    <li>Only used CO2 damage data from 2019 instead of cumulative CO2 damage. However, the title keeps this vague and doesn't mention the time range of the data.</li>
+                    <li>Uses an indexed scale, which exaggerates China's rapid growth compared to the United States, emphasizing growth trends rather than absolute values, making China's increase appear more dramatic.</li>
                 </ul>
             </section>
 
