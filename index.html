@@ -159,10 +159,30 @@
 
                 <p><strong>Visual Encoding Choices</strong></p>
                 <ul>
-                    <li><strong>Position of Each Line (Primary):</strong> Shows each country's CO2 damage over time, appropriate for continuous data. Line position makes the US's prolonged dominance visible and highlights the crossover point with China around 2005.</li>
-                    <li><strong>Color (Secondary):</strong> Draws attention to the US's line using a bold, distinct color, directing viewer focus toward the country the argument centers on while leaving other countries visually secondary.</li>
-                    <li><strong>Marks:</strong> Uses different line styles to differentiate secondary countries without introducing additional colors, keeping visual complexity low and focus on the US.</li>
-                    <li><strong>Text and Labels:</strong> Title encodes the narrative framing to prime the viewer's interpretation before they read the data. Axis labels include units and year range for clarity, and the in-plot text annotation directly labels the shaded region to reinforce the key message.</li>
+                    <li>Title and Narrative Framing
+                        <ul>
+                            <li>Score: -1.5</li>
+                            <li>The title encodes the narrative framing to prime the viewer's interpretation before they read the data. It centers the US's prolonged dominance as the story, which draws attention away from the more recent and dramatic trend of China surpassing and far exceeding US damage levels. A neutral title would present both countries' trajectories without a leading argument.</li>
+                        </ul>
+                    </li>
+                    <li>Color (Bold Red for the US)
+                        <ul>
+                            <li>Score: -1</li>
+                            <li>Color draws attention to the US's line using a bold, distinct color, directing viewer focus toward the country the argument centers on while leaving other countries visually secondary. Despite this, China's line ultimately rises higher, so the visual hierarchy conflicts with the actual data hierarchy, which is a mildly deceptive tradeoff. Using equal visual weight for all countries was considered but would have undermined the persuasive focus.</li>
+                        </ul>
+                    </li>
+                    <li>Shaded Region and In-Plot Annotation
+                        <ul>
+                            <li>Score: -1.5</li>
+                            <li>The shaded background and annotation ("US was #1 for ~35 years") directly label the historical period of US dominance, reinforcing the key message. This decision emphasizes the time period where the United States dominated CO2 damage, which reinforces the argument while downplaying more recent trends. Placing the annotation outside the plot was considered but would have reduced its visual integration with the data.</li>
+                        </ul>
+                    </li>
+                    <li>Line Styles for Secondary Countries
+                        <ul>
+                            <li>Score: 0.5</li>
+                            <li>Different line styles differentiate secondary countries without introducing additional colors, keeping visual complexity low and focus on the US. This is a largely neutral choice that reduces clutter. Although it also subtly reinforces the hierarchy by making India and Russia feel like footnotes rather than relevant comparisons to China and the US.</li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <p><strong>Deceptive Techniques Used:</strong></p>
@@ -192,10 +212,30 @@
 
                 <p><strong>Visual Encoding Choices</strong></p>
                 <ul>
-                    <li><strong>Position of Each Line (Primary):</strong> Shows each country's indexed CO2 damage over time on a common scale, appropriate for continuous quantitative data. A shared baseline makes the divergence between the two countries immediately apparent to the viewer.</li>
-                    <li><strong>Color (Secondary):</strong> Orange encodes China, blue encodes the United States, using color hue as an identity channel to distinguish the two nominal categories. This pairing makes each country's trajectory easy to track across the full time range.</li>
-                    <li><strong>Marks:</strong> Line mark for both countries, with area fill between the lines encoding the growing gap, making the divergence more visually salient than lines alone.</li>
-                    <li><strong>Text and Labels:</strong> Title encodes the narrative framing to guide the viewer's interpretation before they engage with the data. The y-axis label clarifies the index normalization (1990 = 100) to provide context, and the dotted reference line at 100 anchors the baseline year so viewers can measure change from a fixed point.</li>
+                    <li>Title and Narrative Framing
+                        <ul>
+                            <li>Score: -1.5</li>
+                            <li>The title encodes the narrative framing to guide the viewer's interpretation before they engage with the data. It centers China's dramatic growth as the story while describing US levels as "relatively stable," which downplays the fact that the US still nearly tripled its damage index over the same period. The title also keeps the time range vague, obscuring that this uses only annual 2019 data rather than cumulative CO2 damage.</li>
+                        </ul>
+                    </li>
+                    <li>Indexed Scale (Data Transformation)
+                        <ul>
+                            <li>Score: -1.5</li>
+                            <li>The y-axis uses an indexed scale normalized to 1990 = 100, which emphasizes growth rates rather than absolute values. This makes China's increase appear more dramatic relative to the US than it would on an absolute scale, since China started from a much lower baseline in 1990. A neutral alternative would have used absolute damage values, but that would have undermined the argument about relative growth.</li>
+                        </ul>
+                    </li>
+                    <li>Area Fill Between Lines
+                        <ul>
+                            <li>Score: -1</li>
+                            <li>The area fill between the two lines highlights the growing gap, making the divergence more noticeable. This amplifies the magnitude of China's growth by drawing the eye to the widening space rather than to either country's individual trajectory. Lines without fill would have been more neutral and less immediately striking.</li>
+                        </ul>
+                    </li>
+                    <li>Color (Orange for China, Blue for the US)
+                        <ul>
+                            <li>Score: 0.5</li>
+                            <li>Orange encodes China and blue encodes the United States, using color hue as an identity channel to distinguish the two nominal categories. This pairing makes each country's trajectory easy to track across the full time range. The choice is largely earnest as a legibility decision.</li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <p><strong>Deceptive Techniques Used:</strong></p>
