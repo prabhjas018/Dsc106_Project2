@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Project 2 Report</title>
+        <style>
+            :root {
+                --color-neutral-95: hsl(220 10% 95%);
+                --color-neutral-90: hsl(220 10% 90%);
+                --color-neutral-80: hsl(220 10% 80%);
+                --color-neutral-70: hsl(220 10% 70%);
+                --color-neutral-60: hsl(220 10% 60%);
+                --color-neutral-50: hsl(220 10% 50%);
+                --color-neutral-40: hsl(220 10% 40%);
+                --color-neutral-30: hsl(220 10% 30%);
+                --color-neutral-20: hsl(220 10% 20%);
+                --color-neutral-10: hsl(220 10% 10%);
+            }
+
+            html {
+                font: 100%/1.5 system-ui;
+                counter-reset: figure;
+                background: var(--color-neutral-95);
+                max-width: min(75vw, 80em);
+                margin: 0 auto;
+            }
+
+            h1, h2, h3, h4 {
+                line-height: 1.1;
+                font-weight: 600;
+                text-wrap: balance;
+            }
+
+            h1, h2 {
+                border-bottom: 1px solid var(--color-neutral-80);
+                padding-bottom: 0.2em;
+            }
+
+            h1 {
+                margin-block: 1em 0.5rem;
+                font-size: clamp(2.5em, 150% + 2vh + 2vw, 10vmin);
+                font-weight: 800;
+            }
+
+            h1 small {
+                display: block;
+                width: fit-content;
+                padding: 0.2em 0.5em;
+                margin-inline: auto;
+                color: white;
+                background: var(--color-neutral-40);
+                font-size: 40%;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+
+            h2 {
+                font-size: 180%;
+                color: var(--color-neutral-30);
+            }
+
+            h3 {
+                font-size: 130%;
+                margin-top: 1.5em;
+            }
+
+            header {
+                padding-block: 1em;
+                text-align: center;
+            }
+
+            main {
+                background: white;
+                color: var(--color-neutral-20);
+                border-radius: 1rem;
+                padding: 0.1rem 2rem 2rem;
+            }
+
+            figure {
+                margin: 1em 0;
+                padding: 0.5rem;
+                margin-inline: -0.5em;
+                border: 1px solid var(--color-neutral-80);
+                box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
+                text-align: center;
+                background: white;
+            }
+
+            figure img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font: 500 75% system-ui;
+                background: var(--color-neutral-95);
+                padding: 0.5rem;
+                margin: -0.5rem;
+                margin-top: 0.5rem;
+                counter-increment: figure;
+                text-align: left;
+            }
+
+            figcaption::before {
+                content: "Figure " counter(figure) ": ";
+                font-weight: bold;
+                color: var(--color-neutral-40);
+            }
+
+            li + li {
+                margin-top: 0.6em;
+            }
+
+            .score {
+                font-weight: 700;
+                color: var(--color-neutral-30);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <small>Project 2</small>
+                Persuasive or Deceptive Visualization?
+            </h1>
+
+            <p><strong>Prabhjas Singh, Edison Aryan, Tanvi Vidyala</strong> — <em>prs018@ucsd.edu, edaryan@ucsd.edu, tvidyala@ucsd.edu</em></p>
+        </header>
+
+        <main>
+            <h2>Proposition: The United States has caused more CO2 economic damage than any other country except China throughout modern industrial history.</h2>
+
+            <p>
+                Our source was the World Bank Human Development Indicators dataset, specifically the
+                <code>environment.csv</code> file. We used the same dataset for both sides of the proposition,
+                but transformed and framed the data differently to create two opposing persuasive arguments.
+            </p>
+
+            <section>
+                <h2>FOR the Proposition</h2>
+
+                <figure>
+                    <img src="for_proposition.png" alt="fig1">
+                    <figcaption>
+                        This Visualization argue that the United States has historically caused an extremely large amount of CO2 economic damage.
+                    </figcaption>
+                </figure>
+
+                <h3>Design Decisions and Rationale</h3>
+
+                <ul>
+                <li>
+                    
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    
+                </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>AGAINST the Proposition</h2>
+
+                <figure>
+                    <img src="against_proposition.png" alt="fig 2">
+                    <figcaption>
+                        This visualization argue that China’s CO2 damage is now much greater than the United States. 
+                    </figcaption>
+                </figure>
+
+                <h3>Design Decisions and Rationale</h3>
+
+                <ul>
+                <li>
+                    
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    
+                </li>
+                        
+                </ul>
+            </section>
+
+            <section>
+                <h2>Final Reflection</h2>
+
+                <p>
+                The most straightforward part of this project was finding ways on how to make both sides compelling utilizing the same data set. The data already contained multiple possible stories, one about long term historical damage and another about recent annual damage. Because of this, we did not need to fabricate any values or use false information. Instead, the vast majority of persuasion came from choosing different time ranges, different transformations, different titles, and different color emphasis.
+                </p>
+
+                <p>
+                The most difficult part was deciding where persuasion turns into misleading. For instance, using cumulative data for the “for” side is reasonable because the proposition is about history. However, emphasizing the United States with color and annotations while China still leads in the total number of infections creates a more persuasive chart. Similarly, highlighting only 2019 data for the “against” side makes China look clearly dominant, but it also ignores the larger historical context. This showed us that deception in visualization is often not about making up data, but about choosing which truthful parts of the data to emphasize.        </p>
+
+                <p>
+                Ethical visualization is therefore defined as visualization that is transparent enough for the viewer to comprehend what is being visualized, while still allowing the designer to make an argument. Ethical visualization becomes misleading when they hide important context that would substantially change the viewer’s interpretation. In our project, the most ethical choices involved clear labels, sourcing information, and time spans that were appropriate for the visualization. The more questionable choices were vague titles, selective time periods, and visual emphasis that directed attention away from inconvenient parts of the data.        </p>
+            </section>
+        </main>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"c822b88e119346678db149ed7b7721c9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
